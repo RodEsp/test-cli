@@ -42,7 +42,7 @@
     "bin": "test-cli",
     "dirname": "test-cli",
     "commands": "./dist/commands",
-    "flexibleTaxonomy": false,
+    "flexibleTaxonomy": true,
     "plugins": [
       "@oclif/plugin-help",
       "@oclif/plugin-plugins"
