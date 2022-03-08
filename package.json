@@ -42,7 +42,7 @@
     "bin": "test-cli",
     "dirname": "test-cli",
     "commands": "./dist/commands",
-    "flexibleTaxonomy": true,
+    "flexibleTaxonomy": false,
     "plugins": [
       "@oclif/plugin-help",
       "@oclif/plugin-plugins"
@@ -51,9 +51,14 @@
     "topics": {
       "hello": {
         "description": "Say hello to the world and others"
+      },
+      "one": {
+        "description": "Say hello to one"
       }
     },
-    "hooks": { "command_incomplete": "dist/hooks/command_incomplete.js" }
+    "hooks": {
+      "command_incomplete": "dist/hooks/command_incomplete.js"
+    }
   },
   "scripts": {
     "build": "shx rm -rf dist && tsc -b",
