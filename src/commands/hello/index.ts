@@ -15,6 +15,8 @@ hello friend from oclif! (./src/commands/hello/index.ts)
 
   static args = [{name: 'person', description: 'Person to say hello to', required: true}]
 
+  static aliases = ['hello-alias'];
+
   async run(): Promise<void> {
     const {args, flags} = await this.parse(Hello)
 
