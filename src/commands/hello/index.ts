@@ -10,7 +10,7 @@ hello friend from oclif! (./src/commands/hello/index.ts)
   ]
 
   static flags = {
-    from: Flags.string({char: 'f', description: 'Whom is saying hello', required: true}),
+    from: Flags.string({char: 'f', summary: 'Who is saying hello?\nDo the like newlines\nin their flag summaries?', required: true}),
   }
 
   static args = [{name: 'person', description: 'Person to say hello to', required: true}]
